@@ -166,7 +166,6 @@ def plot_FVF():
     plt.savefig(dir_out+'FVF')
     if atom:
         plt.show()
-# calculate_FVF()
 plot_FVF()
 
 #%%.......................................................................................
@@ -199,7 +198,7 @@ def MFD_histogram_grid():
     if atom:
         plt.show()
 
-# MFD_histogram_grid()
+MFD_histogram_grid()
 
 #%%ANIMATION
 
@@ -243,7 +242,7 @@ def create_MFD_animation():
     plt.close()
     return ani
 
-# ani=create_MFD_animation()
+ani=create_MFD_animation()
 # ani.save(dir_out+'MFD.mp4')
 # if atom:
 #     HTML(ani.to_html5_video())
@@ -501,7 +500,7 @@ def area_histogram_grid():
     if atom:
         plt.show()
 
-# area_histogram_grid()
+area_histogram_grid()
 
 def create_area_animation():
     # Fixing bin edges
@@ -543,7 +542,7 @@ def create_area_animation():
     plt.close()
     return ani
 
-# ani=create_area_animation()
+ani=create_area_animation()
 # ani.save(dir_out+'area.mp4')
 if atom:
     HTML(ani.to_html5_video())
@@ -573,7 +572,7 @@ def plot_mean_area(even=False, scale=(1000**2)):
         plt.savefig(dir_out+'area_even')
         if atom:
             plt.show()
-# plot_mean_area(even=True)
+plot_mean_area(even=True)
 
 
 #%%.---------------------------NETWORK ANALYSIS----------------------
@@ -867,7 +866,4 @@ def plot_numberdensity(relative=True):
     plt.savefig(dir_out+'numberdensity_'+str)
     if atom:
         plt.show()
-
 plot_numberdensity()
-#%%
-display_Delaunay_mesh(14)
